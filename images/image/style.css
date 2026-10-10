@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #f0f1eb;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.5px solid rgb(86, 86, 86);
+  height: 10vh;
+  padding: 10px 40px;
+}
+
+.navbar img {
+  height: 55px;
+  object-fit: cover;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 20px;
+}
+
+nav ul {
+  font-size: larger;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.flex-container {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+
+.flex-container img {
+  border-radius: 7px;
+}
+.flex-container button {
+  font-size: 15px;
+  padding: 7px;
+  margin: 40px 0px;
+}
+.projects-text {
+  font-family: "Poppins", sans-serif;
+  margin: auto 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.projects-text h3 {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  line-height: 1.1;
+  gap: 2px;
+  margin: 0;
+}
+
+.projects-text h3 span {
+  display: inline-block;
+}
+
+
+.projects-text > span:nth-of-type(1) {
+  font-size: 25px;
+}
+
+.bigbox{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 30px;
+  background-color: red;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-content: center; */
+  /* aspect-ratio: 1.2/1; */
+  /* margin: 30px; */
+  /* width: 250px; */
+  border: 2px solid black;
+  border-radius: 7px;
+  overflow: hidden;
+  /* background-color: #0011ff; ADD THIS - you'll see red if image doesn't fill */
+  /* min-height: 200px; ADD THIS - ensures boxes have minimum size */
+  /* position: relative; */
+}
+
+.box img{
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  object-position: center;
+}
+
+.box p{
+    padding:15px;
+    line-height:1.6;
+}
