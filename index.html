@@ -7,21 +7,25 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="navbar">
-      <img src="./Logo.png" alt="Aurora Architects" />
-      <header>
-        <nav>
-          <ul class="hvrLine">
-            <li> <a href="">Projects</a></li>
-            <li> <a href="">Studio</a></li>
-            <li> <a href="">OurPhilosophy</a></li>
-            <li> <a href="">Contactus</a></li>
-          </ul>
-        </nav>
-      </header>
-    </div>
+    
+<div class="navbar">
+  <a href="#home" aria-label="Aurora Architects home">
+    <img src="./Logo.png" alt="Aurora Architects" />
+  </a>
 
-    <main>
+  <header>
+    <nav aria-label="Main navigation">
+      <ul class="hvrLine">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#studio">Studio</a></li>
+        <li><a href="#philosophy">Our Philosophy</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+
+    <main id="home">
       <section class="flex-container">
         <img src="./main house.jpg" alt="Projects" height="550px" />
         <div class="projects-text">
@@ -40,7 +44,7 @@
         </div>
       </section>
 
-      <section class="featuredWorks">
+      <section id="projects" class="featuredWorks">
         <h3 class="title">Featured Works</h3>
         <div class="bigbox">
           <div class="box">
@@ -88,7 +92,7 @@
         </div>
       </section>
 
-      <section class="philosophy">
+      <section id="philosophy" class="philosophy">
         <h3 class="title">Our Philosophy</h3>
 
         <div class="bigbox2">
@@ -180,32 +184,44 @@
         </div>
       </section>
 
-      <section class="end">
+      
+      <section class="end" id="contact">
         <div class="Cbox">
           <div class="rows">
-            <h3>Services</h3>
-            <a href="">Services</a>
-            <a href="">Services </a>
-            <a href="">Services</a>
+            <h3>Our Services</h3>
+            <a href="#projects">Residential Architecture</a>
+            <a href="#projects">Interior Design</a>
+            <a href="#philosophy">Sustainable Design</a>
           </div>
+      
           <div class="rows">
-            <h3>Projects</h3>
-            <a href="">Projects</a>
-            <a href="">Projects</a>
-            <a href="">Projects</a>
+            <h3>Our Work</h3>
+            <a href="#projects">Featured Projects</a>
+            <a href="#projects">Modern Residences</a>
+            <a href="#projects">Explore Our Portfolio</a>
           </div>
+      
           <div class="rows">
-            <h3>Career</h3>
-            <a href="">Career </a>
-            <a href="">Career </a>
-            <a href="">Career </a>
+            <h3>Our Studio</h3>
+            <a href="#studio">Latest Insights</a>
+            <a href="#philosophy">Our Philosophy</a>
+            <a href="#home">Back to Home</a>
           </div>
+      
           <div class="rows">
-            <h3>Contact Us</h3>
-            <a href="">Contact Us</a>
-            <a href="">Contact Us</a>
-            <a href="">Contact Us</a>
+            <h3>Start a Conversation</h3>
+            <p>Have a vision for a space? Let's explore how we can bring it to life.</p>
+            <a href="mailto:your-email@example.com">
+              Discuss a Project →
+            </a>
           </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>
+            © 2026 Aurora Architects. Thoughtfully designed spaces,
+            built around the way you live.
+          </p>
         </div>
       </section>
     </main>
